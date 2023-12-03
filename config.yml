@@ -1,0 +1,68 @@
+baseURL: 'https://racer1988.github.io/'
+languageCode: en-us
+title: Marco Pappalardo
+theme: marco
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+#googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: false
+
+params:
+
+  # About Me
+  title: Marco Pappalardo
+  description: "Marco Pappalardo Software Engineer"
+  keywords: [Marco Pappalardo, Pappalardo, iOS, Swift, Engineering]
+  author: Marco Pappalardo
+
+  # Env
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+
+  # Date
+  DateFormat: "2 January 2006"
+
+  # Theme
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  # Header
+  showHeader: true
+
+  # Social Icons
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/racer1988"
+    - name: linkedin
+      url: "https://linkedin.com/in/pappalar"
+
+#  analytics:
+#    google:
+#      SiteVerificationTag: "XYZabc"
+
+
+# menu:
+#   main:
+    # - identifier: posts
+    #   name: Write
+    #   url: /posts/
+    #   weight: 1
+    # - identifier: talks
+    #   name: Speak
+    #   url: /talks/
+    #   weight: 2
+    # - identifier: projects
+    #   name: Build
+    #   url: /projects/
+    #   weight: 3
+    # - identifier: about
+    #   name: About
+    #   url: /about-me/
+    #   weight: 4

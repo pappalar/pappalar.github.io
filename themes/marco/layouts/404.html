@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "header.html" . }}
+  <body>
+    <div class="content">
+      {{ partial "head.html" . }}
+
+      <article class="not-found">
+          <div class="title">
+              <h1>{{ "404 Not Found \U0001F622" | markdownify }}</h1>
+          </div>
+      </article>
+
+      {{ partial "footer.html" . }}
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<header>
+
+	<div class="main">
+			{{ if site.Params.showHeader }}
+				<a href="{{ .Site.BaseURL }}">
+					<h2>{{ .Site.Title }}</h2>
+				</a>
+			</div>
+		{{ end }}
+
+	{{- $currentPage := . }}
+	<nav class="navbar">
+		{{ range .Site.Menus.main }}
+	    {{- $menu_item_url := (cond (strings.HasSuffix .URL "/") .URL (printf "%s/" .URL) ) | absLangURL }}
+        {{- $page_url:= $currentPage.Permalink | absLangURL }}
+
+	 	<a href="{{ .URL }}">
+			<span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+				{{ .Name }}
+			</span>
+		</a>
+		{{ end }}
+	</nav>
+</header>

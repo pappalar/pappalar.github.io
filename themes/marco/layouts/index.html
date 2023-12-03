@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "header.html" . }}
+  <body>
+    <div class="content">
+      {{ partial "head.html" . }}
+
+      <article class="center">
+          <img class="avatar" src="/img/profile.jpeg">
+          <div class="title">
+              <h1>{{ "Hello there \U0001F44B" | markdownify }}</h1>
+          </div>
+          <div class="body">
+            <div>I'm Marco</div>
+            <div>iOS software engineer</div>
+          </div>
+          <div>
+              {{ partial "social_icons.html" site.Params.socialIcons }}
+          </div>
+      </article>
+
+      {{ partial "footer.html" . }}
+    </div>
+
+  </body>
+</html>
