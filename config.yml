@@ -1,4 +1,4 @@
-baseURL: 'https://racer1988.github.io/'
+baseURL: 'https://pappalar.github.io/'
 languageCode: en-us
 title: Marco Pappalardo
 theme: marco
@@ -39,7 +39,7 @@ params:
 
   socialIcons:
     - name: github
-      url: "https://github.com/racer1988"
+      url: "https://github.com/pappalar"
     - name: linkedin
       url: "https://linkedin.com/in/pappalar"
 
